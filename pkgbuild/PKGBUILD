@@ -1,0 +1,21 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=blackbird-settings-systemsettingsdefault-systemsettings-settings-rolling
+pkgver=$(date +%Y.%m)
+pkgrel=1
+pkgdesc="Regrouped and resorted Plasma5 System Settings for Blackbird OS"
+arch=('any')
+url='https://github.com/blackbird-os/blackbird-settings-systemsettings'
+license=('GPL')
+
+prepare() {
+  cd ../..
+  mkdir -p usr/share/default-settings/plasma5-profile/
+  mv kservices5 usr/share/default-settings/plasma5-profile/
+}
+
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
