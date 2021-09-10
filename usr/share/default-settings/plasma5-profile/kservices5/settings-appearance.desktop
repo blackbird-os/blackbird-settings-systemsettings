@@ -3,7 +3,8 @@ Type=Service
 X-KDE-ServiceTypes=SystemSettingsCategory
 X-KDE-System-Settings-Category=desktop-appearance
 X-KDE-System-Settings-Parent-Category=system-administration
-Icon=preferences-desktop-theme
+X-KDE-System-Settings-Category-Module=kcm_lookandfeel
+Icon=preferences-desktop-theme-global
 X-KDE-Weight=1
 
 
